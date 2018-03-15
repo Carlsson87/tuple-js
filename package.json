@@ -1,0 +1,25 @@
+{
+  "name": "tuple-js",
+  "version": "1.0.0",
+  "description": "A Tuple",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha src/index.test.js --require babel-register",
+    "build": "babel src/ -d lib/",
+    "prepublish": "npm run build",
+    "flow": "flow"
+  },
+  "author": "Daniel Carlsson",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-flow": "^6.23.0",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "flow-bin": "^0.67.1",
+    "mocha": "^5.0.4"
+  },
+  "dependencies": {
+    "babel-preset-env": "^1.6.1"
+  }
+}
